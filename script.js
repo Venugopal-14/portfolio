@@ -803,3 +803,51 @@ document.addEventListener('mousemove', (e) => {
     
     setTimeout(() => trail.remove(), 800);
 });
+
+// ===== Tech Stack Cards Stagger Animation =====
+gsap.utils.toArray('.techstack-grid .tech-card').forEach((el, i) => {
+    gsap.from(el, {
+        scrollTrigger: {
+            trigger: el,
+            start: 'top 92%',
+            toggleActions: 'play none none none'
+        },
+        opacity: 0, y: 40, scale: 0.85, duration: 0.5,
+        delay: i * 0.05, ease: 'back.out(1.7)'
+    });
+});
+
+// ===== Education Cards Animation =====
+gsap.utils.toArray('.education-grid .edu-card').forEach((el, i) => {
+    gsap.from(el, {
+        scrollTrigger: {
+            trigger: el,
+            start: 'top 88%',
+            toggleActions: 'play none none none'
+        },
+        opacity: 0, y: 50, rotateX: 10, duration: 0.8,
+        delay: i * 0.15, ease: 'power3.out'
+    });
+});
+
+// ===== CV Card Pulse Animation =====
+gsap.from('.cv-card', {
+    scrollTrigger: {
+        trigger: '.cv-card',
+        start: 'top 85%',
+        toggleActions: 'play none none none'
+    },
+    opacity: 0, scale: 0.9, duration: 1,
+    ease: 'elastic.out(1, 0.5)'
+});
+
+// ===== Working Tags Stagger =====
+gsap.from('.working-tag', {
+    scrollTrigger: {
+        trigger: '.currently-working',
+        start: 'top 85%',
+        toggleActions: 'play none none none'
+    },
+    opacity: 0, x: -20, duration: 0.4,
+    stagger: 0.08, ease: 'power2.out'
+});
