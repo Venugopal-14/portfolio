@@ -46,37 +46,20 @@
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content">
-                <p class="hero-greeting">HELLO, I'M</p>
-                <h1 class="hero-name">Venugopal <span class="accent">A</span></h1>
-                <h2 class="hero-title">Software Engineer | AI &amp; Platform Engineering</h2>
-                <p class="hero-lead">I build backend systems, intelligent automation and scalable platforms.</p>
-                <p class="hero-description">
-                    I'm a Software Engineer at BT Group, pursuing M.Tech in AI &amp; ML at BITS Pilani.
-                    My work spans Python &amp; API development, AI-powered applications, cloud-native
-                    infrastructure, CI/CD automation and observability — turning complex engineering
-                    problems into reliable, practical solutions.
+                <p class="hero-eyebrow">SOFTWARE ENGINEER &middot; BENGALURU</p>
+                <h1 class="hero-headline">Building intelligent systems.<br><span class="accent">From backend to AI.</span></h1>
+                <p class="hero-intro">
+                    I build backend services, AI-powered applications and reliable platforms
+                    that solve real engineering problems.
                 </p>
                 <div class="hero-buttons">
-                    <a href="Venugopal_A_CV.pdf" class="btn btn-primary" download>
-                        <i class="fas fa-download"></i> Download CV
-                    </a>
-                    <a href="#projects" class="btn btn-outline">
-                        View My Work <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <a href="#projects" class="btn btn-primary">Explore My Work <i class="fas fa-arrow-up-right-from-square"></i></a>
+                    <a href="Venugopal_A_CV.pdf" class="btn btn-outline" download>Download CV <i class="fas fa-arrow-down"></i></a>
                 </div>
-                <div class="hero-socials">
-                    <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" class="social-pill">
-                        <span class="social-icon"><i class="fab fa-github"></i></span>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://linkedin.com/in/venugopal-a-b8928a26b" target="_blank" rel="noopener" class="social-pill">
-                        <span class="social-icon social-linkedin"><i class="fab fa-linkedin-in"></i></span>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="mailto:venugopal.dev7@gmail.com" class="social-pill">
-                        <span class="social-icon social-email"><i class="fas fa-envelope"></i></span>
-                        <span>Email</span>
-                    </a>
+                <div class="hero-links">
+                    <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/venugopal-a-b8928a26b" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:venugopal.dev7@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
 
@@ -139,83 +122,59 @@
     <!-- Featured Projects -->
     <section class="section" id="projects">
         <div class="container">
-            <div class="section-head">
-                <h2 class="section-title"><span class="title-dot"></span> Featured Projects</h2>
-                <span class="section-link-static">Enterprise work &amp; personal projects</span>
+            <div class="section-head center">
+                <p class="section-eyebrow">SELECTED WORK</p>
+                <h2 class="section-title-lg">Projects I'm proud of</h2>
             </div>
 
-            <div class="projects-row">
+            <div class="work-grid">
                 <!-- DeployHub (BT Group) -->
-                <article class="project-card" data-animate>
-                    <div class="project-top">
-                        <span class="status status-ent">Enterprise Project</span>
-                        <span class="project-glyph glyph-purple"><i class="fas fa-layer-group"></i></span>
+                <button type="button" class="work-card" data-modal="deployhub">
+                    <div class="work-thumb thumb-purple"><i class="fas fa-layer-group"></i></div>
+                    <div class="work-body">
+                        <span class="work-label label-ent">Enterprise · BT Group</span>
+                        <h3>DeployHub</h3>
+                        <p>Deployment automation across distributed Kubernetes environments.</p>
+                        <div class="work-chips"><span>Jenkins</span><span>Ansible</span><span>Kubernetes</span></div>
+                        <span class="work-explore">Explore Project <i class="fas fa-arrow-right"></i></span>
                     </div>
-                    <h3>DeployHub</h3>
-                    <p class="project-sub">Deployment Automation &middot; BT Group</p>
-                    <p class="project-desc">Platform-engineering work at BT Group automating Kubernetes deployments and provisioning with Jenkins, Ansible and GitLab — improving deployment consistency and reducing manual effort.</p>
-                    <div class="project-tags">
-                        <span>Jenkins</span><span>Ansible</span><span>Kubernetes</span><span>GitLab</span>
-                    </div>
-                    <div class="project-foot">
-                        <button type="button" class="project-detail" data-modal="deployhub">View Details <i class="fas fa-arrow-right"></i></button>
-                        <span class="project-gh project-gh-ent"><i class="fas fa-building"></i> Internal</span>
-                    </div>
-                </article>
+                </button>
 
                 <!-- AutoOps AI (BT Group) -->
-                <article class="project-card" data-animate>
-                    <div class="project-top">
-                        <span class="status status-ent">Enterprise Project</span>
-                        <span class="project-glyph glyph-indigo"><i class="fas fa-brain"></i></span>
+                <button type="button" class="work-card" data-modal="autoops">
+                    <div class="work-thumb thumb-indigo"><i class="fas fa-brain"></i></div>
+                    <div class="work-body">
+                        <span class="work-label label-ent">Enterprise · BT Group</span>
+                        <h3>AutoOps AI</h3>
+                        <p>Intelligent operations — AI-driven incident analysis and remediation.</p>
+                        <div class="work-chips"><span>FastAPI</span><span>LLaMA3</span><span>Prometheus</span></div>
+                        <span class="work-explore">Explore Project <i class="fas fa-arrow-right"></i></span>
                     </div>
-                    <h3>AutoOps AI</h3>
-                    <p class="project-sub">AIOps &amp; Self-Healing &middot; BT Group</p>
-                    <p class="project-desc">An enterprise AIOps initiative: alert ingestion with deduplication, incident correlation, LLM-based root-cause analysis, and human-approved remediation via Jenkins/Ansible with monitoring-based recovery validation.</p>
-                    <div class="project-tags">
-                        <span>FastAPI</span><span>Ollama</span><span>LLaMA3</span><span>Prometheus</span>
-                    </div>
-                    <div class="project-foot">
-                        <button type="button" class="project-detail" data-modal="autoops">View Details <i class="fas fa-arrow-right"></i></button>
-                        <span class="project-gh project-gh-ent"><i class="fas fa-building"></i> Internal</span>
-                    </div>
-                </article>
+                </button>
 
-                <!-- PayPal AI Payment Agent (personal / hackathon) -->
-                <article class="project-card" data-animate>
-                    <div class="project-top">
-                        <span class="status status-wip">In Development</span>
-                        <span class="project-glyph glyph-blue"><i class="fas fa-credit-card"></i></span>
+                <!-- PayPal AI Payment Agent (hackathon) -->
+                <button type="button" class="work-card" data-modal="paypal">
+                    <div class="work-thumb thumb-blue"><i class="fas fa-credit-card"></i></div>
+                    <div class="work-body">
+                        <span class="work-label label-wip">Hackathon · In development</span>
+                        <h3>PayPal AI Payment Agent</h3>
+                        <p>An AI agent for safe, confirmation-first payment workflows.</p>
+                        <div class="work-chips"><span>Python</span><span>FastAPI</span><span>LLM Agents</span></div>
+                        <span class="work-explore">Explore Project <i class="fas fa-arrow-right"></i></span>
                     </div>
-                    <h3>PayPal AI Payment Agent</h3>
-                    <p class="project-sub">AI Agent &middot; Hackathon Project</p>
-                    <p class="project-desc">A personal hackathon project: an AI agent that helps users with payment-related tasks in natural language, with explicit confirmation and controlled, auditable execution.</p>
-                    <div class="project-tags">
-                        <span>Python</span><span>FastAPI</span><span>LLM Agents</span><span>PayPal API</span>
-                    </div>
-                    <div class="project-foot">
-                        <button type="button" class="project-detail" data-modal="paypal">View Details <i class="fas fa-arrow-right"></i></button>
-                        <span class="project-gh project-gh-muted"><i class="fas fa-flask"></i> WIP</span>
-                    </div>
-                </article>
+                </button>
 
                 <!-- OpsMind AI (personal) -->
-                <article class="project-card" data-animate>
-                    <div class="project-top">
-                        <span class="status status-done">Completed</span>
-                        <span class="project-glyph glyph-purple"><i class="fas fa-robot"></i></span>
+                <button type="button" class="work-card" data-modal="opsmind">
+                    <div class="work-thumb thumb-violet"><i class="fas fa-robot"></i></div>
+                    <div class="work-body">
+                        <span class="work-label label-personal">Personal · Completed</span>
+                        <h3>OpsMind AI</h3>
+                        <p>AI-assisted DevOps copilot for incident triage with RAG.</p>
+                        <div class="work-chips"><span>Python</span><span>RAG</span><span>LLM</span></div>
+                        <span class="work-explore">Explore Project <i class="fas fa-arrow-right"></i></span>
                     </div>
-                    <h3>OpsMind AI</h3>
-                    <p class="project-sub">AI-Powered AIOps &middot; Personal</p>
-                    <p class="project-desc">A personal project: an AI-assisted DevOps assistant for incident analysis, contextual runbook retrieval and remediation recommendations using RAG and LLMs.</p>
-                    <div class="project-tags">
-                        <span>Python</span><span>RAG</span><span>LLM</span><span>Vector DB</span>
-                    </div>
-                    <div class="project-foot">
-                        <button type="button" class="project-detail" data-modal="opsmind">View Details <i class="fas fa-arrow-right"></i></button>
-                        <a href="https://github.com/Venugopal-14/opsmind-ai" target="_blank" rel="noopener" class="project-gh"><i class="fab fa-github"></i> GitHub</a>
-                    </div>
-                </article>
+                </button>
             </div>
         </div>
     </section>
@@ -344,33 +303,23 @@
                 <div class="skills-groups">
                     <div class="skill-group" data-animate>
                         <h4><i class="fas fa-server"></i> Backend</h4>
-                        <div class="skill-tags">
-                            <span>Python</span><span>Django</span><span>FastAPI</span><span>REST APIs</span><span>Java</span><span>Background Workers</span><span>Concurrency</span><span>MySQL Pooling</span>
-                        </div>
+                        <p class="skill-line">Python · Django · FastAPI · REST APIs · Java</p>
                     </div>
                     <div class="skill-group" data-animate>
                         <h4><i class="fas fa-brain"></i> AI / ML</h4>
-                        <div class="skill-tags">
-                            <span>RASA / NLU</span><span>Ollama</span><span>LLaMA3</span><span>Qwen</span><span>RAG</span><span>FAISS</span><span>Prompt Engineering</span><span>NumPy</span><span>Pandas</span><span>Scikit-learn</span>
-                        </div>
+                        <p class="skill-line">Ollama · LLaMA3 · RAG · FAISS · RASA · Scikit-learn</p>
                     </div>
                     <div class="skill-group" data-animate>
                         <h4><i class="fas fa-gears"></i> DevOps &amp; Automation</h4>
-                        <div class="skill-tags">
-                            <span>Jenkins</span><span>GitLab CI/CD</span><span>Docker</span><span>Kubernetes</span><span>Ansible</span><span>Linux</span><span>Shell Scripting</span><span>HAProxy</span>
-                        </div>
+                        <p class="skill-line">Jenkins · Docker · Kubernetes · Ansible · GitLab CI/CD</p>
                     </div>
                     <div class="skill-group" data-animate>
                         <h4><i class="fas fa-chart-column"></i> Observability</h4>
-                        <div class="skill-tags">
-                            <span>Prometheus</span><span>PromQL</span><span>Grafana</span><span>Dynatrace</span><span>Alertmanager</span><span>Elasticsearch</span><span>Logstash</span>
-                        </div>
+                        <p class="skill-line">Prometheus · Grafana · Dynatrace · Elasticsearch</p>
                     </div>
                     <div class="skill-group" data-animate>
-                        <h4><i class="fas fa-database"></i> Distributed Systems &amp; Databases</h4>
-                        <div class="skill-tags">
-                            <span>Kafka</span><span>ClickHouse</span><span>PostgreSQL</span><span>MySQL</span><span>Redis</span>
-                        </div>
+                        <h4><i class="fas fa-database"></i> Data &amp; Distributed Systems</h4>
+                        <p class="skill-line">Kafka · ClickHouse · PostgreSQL · Redis</p>
                     </div>
                 </div>
             </div>
@@ -397,32 +346,18 @@
                                 <span><i class="fas fa-location-dot"></i> Bengaluru, India</span>
                             </div>
                         </div>
-                        <h4 class="exp-subhead">Customer Onboarding Automation Platform (OAP)</h4>
-                        <ul>
-                            <li>Migrated enterprise automation workloads from AWX to Jenkins, improving CI/CD reliability and enabling full AWX decommissioning.</li>
-                            <li>Developed OS patch automation pipelines with validation, reporting and notification workflows, reducing manual operational effort by 95%+.</li>
-                            <li>Built backend APIs using Django, FastAPI, Python and Jenkins API integrations to automate customer onboarding end-to-end.</li>
-                            <li>Integrated RASA chatbots with incident-ticket data and backend workflows, cutting manual onboarding effort by 80%.</li>
-                        </ul>
-                        <h4 class="exp-subhead">LBG Platform Engineering <span class="exp-scope">PreProd &middot; 30+ servers</span></h4>
-                        <ul>
-                            <li>Owned end-to-end design, build and stabilization of distributed PreProd environments across 30+ servers.</li>
-                            <li>Deployed and validated distributed platforms including Kafka, ClickHouse, PostgreSQL, Kubernetes, HAProxy, Prometheus, Grafana Enterprise, Elasticsearch and GitLab Runners.</li>
-                            <li>Automated Kubernetes deployments using Jenkins, Ansible and GitLab, improving deployment consistency.</li>
-                        </ul>
-                        <h4 class="exp-subhead">Business Martini Platform Engineering <span class="exp-scope">PreProd &amp; Production &middot; 60+ servers</span></h4>
-                        <ul>
-                            <li>Owned full lifecycle (design, build, automation, production-hardening) of distributed infrastructure across 60+ servers in PreProd and Production.</li>
-                            <li>Architected production-grade platforms including Kafka (KRaft), ClickHouse clusters, Kubernetes, PostgreSQL, Redis, HAProxy, Prometheus, Grafana Enterprise, Elasticsearch and GitLab Runners.</li>
-                            <li>Built one-click deployment automation via Jenkins, Ansible, Docker and Python, cutting manual deployment effort by ~70%.</li>
-                            <li>Automated infrastructure provisioning, reducing provisioning time from days to under an hour.</li>
-                        </ul>
-                        <h4 class="exp-subhead">Observability &amp; AIOps</h4>
-                        <ul>
-                            <li>Implemented centralized monitoring with Prometheus, Grafana, Dynatrace, Elasticsearch, Logstash and custom exporters with real-time alerting.</li>
-                            <li>Resolved production incidents across distributed systems, ingestion pipelines, networking and cluster synchronization while maintaining high availability.</li>
-                            <li>Working on AIOps, anomaly detection and GenAI-powered incident analysis and remediation.</li>
-                        </ul>
+                        <p class="timeline-summary">
+                            Platform engineering, backend development and automation across large
+                            distributed environments — from onboarding automation to production-grade
+                            observability and AIOps.
+                        </p>
+                        <div class="exp-focus">
+                            <span class="exp-focus-item"><strong>Onboarding Automation</strong> AWX→Jenkins migration, OS-patch &amp; onboarding workflows</span>
+                            <span class="exp-focus-item"><strong>LBG Platform</strong> PreProd · 30+ servers</span>
+                            <span class="exp-focus-item"><strong>Business Martini</strong> PreProd &amp; Production · 60+ servers</span>
+                            <span class="exp-focus-item"><strong>Observability &amp; AIOps</strong> Prometheus, Grafana, Dynatrace, GenAI</span>
+                        </div>
+                        <p class="timeline-note">Deep technical detail is available in the <a href="#projects">AutoOps AI and DeployHub case studies</a>.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-animate>
@@ -437,11 +372,10 @@
                                 <span><i class="far fa-calendar"></i> Aug 2023 - Sep 2023</span>
                             </div>
                         </div>
-                        <ul>
-                            <li>Built end-to-end data pipelines in Python (Pandas, NumPy) for ingestion, cleaning, transformation and deduplication.</li>
-                            <li>Performed ETL-style data wrangling and exploratory data analysis with feature engineering and data validation.</li>
-                            <li>Developed and evaluated classification and regression models (Random Forest, Naive Bayes, Scikit-Learn).</li>
-                        </ul>
+                        <p class="timeline-summary">
+                            Built end-to-end data pipelines in Python (Pandas, NumPy) and evaluated
+                            classification and regression models with Scikit-Learn.
+                        </p>
                     </div>
                 </div>
             </div>
