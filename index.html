@@ -6,9 +6,8 @@
     <title>Venugopal A | Software Engineer | AI &amp; Platform Engineering</title>
     <meta name="description" content="Venugopal A — Software Engineer specializing in AI & Platform Engineering. Backend (Python, FastAPI, Django), AI/ML, cloud-native infrastructure, CI/CD automation, and observability.">
     <meta name="author" content="Venugopal A">
-    <meta name="theme-color" content="#060913">
+    <meta name="theme-color" content="#f5f3ff">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Venugopal A | Software Engineer | AI & Platform Engineering">
     <meta property="og:description" content="Backend · AI/ML · Platform Engineering · Intelligent Automation">
     <meta property="og:type" content="website">
@@ -17,43 +16,29 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Custom Cursor (desktop enhancement only) -->
-    <div class="cursor" id="cursor" aria-hidden="true"></div>
-    <div class="cursor-follower" id="cursor-follower" aria-hidden="true"></div>
-
-    <!-- Particle Canvas Background -->
-    <canvas id="particles-canvas" aria-hidden="true"></canvas>
-
-    <!-- Loader -->
-    <div class="loader" id="loader" aria-hidden="true">
-        <div class="loader-inner">
-            <div class="loader-line"></div>
-            <div class="loader-line"></div>
-            <div class="loader-line"></div>
-            <span class="loader-text">&lt;Venu/&gt;</span>
-        </div>
-    </div>
-
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#home" class="nav-logo" data-magnetic>&lt;Venu/&gt;</a>
+            <a href="#home" class="nav-logo">&lt;Venu/&gt;</a>
             <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span class="hamburger"></span>
             </button>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link" data-magnetic>Home</a></li>
-                <li><a href="#about" class="nav-link" data-magnetic>About</a></li>
-                <li><a href="#techstack" class="nav-link" data-magnetic>Tech Stack</a></li>
-                <li><a href="#experience" class="nav-link" data-magnetic>Experience</a></li>
-                <li><a href="#projects" class="nav-link" data-magnetic>Projects</a></li>
-                <li><a href="#education" class="nav-link" data-magnetic>Education</a></li>
-                <li><a href="#contact" class="nav-link" data-magnetic>Contact</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#techstack" class="nav-link">Tech Stack</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <a href="Venugopal_A_CV.pdf" class="btn btn-primary btn-nav-cv" download>
+                <i class="fas fa-download"></i> Download CV
+            </a>
         </div>
     </nav>
 
@@ -61,44 +46,87 @@
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-name">Venugopal A</h1>
-                <h2 class="hero-title">
-                    <span class="typing-wrapper">
-                        <span class="typing-text">Software Engineer</span><span class="typing-cursor" aria-hidden="true">|</span>
-                    </span>
-                </h2>
-                <p class="hero-tagline">AI &amp; Platform Engineering &middot; Backend &middot; AI/ML &middot; Intelligent Automation</p>
+                <p class="hero-greeting">HELLO, I'M</p>
+                <h1 class="hero-name">Venugopal <span class="accent">A</span></h1>
+                <h2 class="hero-title">Software Engineer | AI &amp; Platform Engineering</h2>
+                <p class="hero-lead">I build backend systems, intelligent automation and scalable platforms.</p>
                 <p class="hero-description">
-                    I build backend systems, intelligent automation, and scalable platforms. My work spans
-                    Python and API development, AI-powered applications, cloud-native infrastructure, CI/CD
-                    automation, and observability &mdash; turning complex engineering problems into reliable,
-                    practical solutions.
+                    I'm a Software Engineer at BT Group, pursuing M.Tech in AI &amp; ML at BITS Pilani.
+                    My work spans Python &amp; API development, AI-powered applications, cloud-native
+                    infrastructure, CI/CD automation and observability — turning complex engineering
+                    problems into reliable, practical solutions.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary" data-magnetic>
-                        <span class="btn-text">View Projects</span>
-                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    <a href="Venugopal_A_CV.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download CV
                     </a>
-                    <a href="#contact" class="btn btn-outline" data-magnetic>
-                        <span class="btn-text"><i class="fas fa-paper-plane"></i> Get In Touch</span>
+                    <a href="#projects" class="btn btn-outline">
+                        View My Work <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 <div class="hero-socials">
-                    <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" aria-label="GitHub" data-magnetic><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/venugopal-a-b8928a26b" target="_blank" rel="noopener" aria-label="LinkedIn" data-magnetic><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:venugopal.dev7@gmail.com" aria-label="Email" data-magnetic><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" class="social-pill">
+                        <span class="social-icon"><i class="fab fa-github"></i></span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/venugopal-a-b8928a26b" target="_blank" rel="noopener" class="social-pill">
+                        <span class="social-icon social-linkedin"><i class="fab fa-linkedin-in"></i></span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:venugopal.dev7@gmail.com" class="social-pill">
+                        <span class="social-icon social-email"><i class="fas fa-envelope"></i></span>
+                        <span>Email</span>
+                    </a>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="hero-blob"></div>
-                <div class="hero-photo-wrapper">
-                    <div class="hero-photo-ring"></div>
-                    <div class="hero-photo-ring hero-photo-ring-2"></div>
-                    <div class="avatar" aria-label="Venugopal A">
-                        <span class="avatar-initials">VA</span>
+
+            <!-- Hero Illustration (pure CSS/SVG) -->
+            <div class="hero-visual" aria-hidden="true">
+                <div class="hero-blob hero-blob-1"></div>
+                <div class="hero-blob hero-blob-2"></div>
+
+                <span class="handwritten">Better Systems Everyday</span>
+
+                <div class="scene">
+                    <!-- Plant -->
+                    <div class="plant">
+                        <span class="leaf leaf-1"></span>
+                        <span class="leaf leaf-2"></span>
+                        <span class="leaf leaf-3"></span>
+                        <span class="pot"></span>
                     </div>
-                    <div class="hero-photo-glow"></div>
+
+                    <!-- Laptop -->
+                    <div class="laptop">
+                        <div class="laptop-screen">
+                            <div class="code-dots"><i></i><i></i><i></i></div>
+                            <div class="code-lines">
+                                <span class="cl w70 c-kw"></span>
+                                <span class="cl w40 c-str"></span>
+                                <span class="cl w85"></span>
+                                <span class="cl w55 c-fn"></span>
+                                <span class="cl w65"></span>
+                            </div>
+                        </div>
+                        <div class="laptop-base"></div>
+                    </div>
+
+                    <!-- Coffee cup -->
+                    <div class="cup"><span class="cup-handle"></span></div>
+
+                    <!-- Build/Automate/Deploy/Repeat stack -->
+                    <div class="step-stack">
+                        <span class="step">Build</span>
+                        <span class="step">Automate</span>
+                        <span class="step">Deploy</span>
+                        <span class="step step-accent">Repeat</span>
+                    </div>
+                </div>
+
+                <!-- Quote card -->
+                <div class="quote-card">
+                    <i class="fas fa-quote-left quote-mark"></i>
+                    <p>Turning complex engineering problems into reliable, practical solutions.</p>
                 </div>
             </div>
         </div>
@@ -108,373 +136,260 @@
         </a>
     </section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
+    <!-- Featured Projects -->
+    <section class="section" id="projects">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-image" data-animate="scale-in">
-                    <div class="about-photo-wrapper">
-                        <div class="avatar avatar-lg" aria-label="Venugopal A">
-                            <span class="avatar-initials">VA</span>
-                        </div>
-                        <div class="orbit-ring"></div>
-                        <div class="orbit-ring orbit-ring-2"></div>
-                        <div class="about-float-badge badge-1"><i class="fab fa-python"></i></div>
-                        <div class="about-float-badge badge-2"><i class="fas fa-brain"></i></div>
-                        <div class="about-float-badge badge-3"><i class="fas fa-code"></i></div>
-                    </div>
-                </div>
-                <div class="about-content">
-                    <p data-animate="fade-up">
-                        I'm a <strong>Software Engineer at BT Group</strong> working across backend development,
-                        platform engineering, automation, and AI/ML. I'm pursuing an <strong>M.Tech in Artificial
-                        Intelligence &amp; Machine Learning at BITS Pilani</strong>, and I focus on building
-                        automation platforms, scalable infrastructure, observability, and intelligent systems
-                        that improve operational efficiency and reliability.
-                    </p>
-                    <p data-animate="fade-up">
-                        My day-to-day blends Python, FastAPI, and Django backends with Kubernetes, Jenkins,
-                        Ansible, and distributed systems like Kafka and ClickHouse &mdash; and increasingly with
-                        GenAI (LLaMA3, RAG, FAISS) for AIOps and intelligent incident analysis.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat" data-animate="counter" data-count="90" data-suffix="+">
-                            <span class="stat-number">90+</span>
-                            <span class="stat-label">Servers Managed</span>
-                        </div>
-                        <div class="stat" data-animate="counter" data-count="95" data-suffix="%">
-                            <span class="stat-number">95%</span>
-                            <span class="stat-label">Patching Effort Reduced</span>
-                        </div>
-                        <div class="stat" data-animate="counter" data-count="80" data-suffix="%">
-                            <span class="stat-number">80%</span>
-                            <span class="stat-label">Onboarding Effort Reduced</span>
-                        </div>
-                    </div>
-                    <!-- Currently Working On -->
-                    <div class="currently-working" data-animate="fade-up">
-                        <h3><i class="fas fa-bolt"></i> Currently Working On</h3>
-                        <div class="working-tags">
-                            <span class="working-tag"><i class="fas fa-rocket"></i> DeployHub (Platform Eng)</span>
-                            <span class="working-tag"><i class="fas fa-robot"></i> PayPal AI Payment Agent</span>
-                            <span class="working-tag"><i class="fas fa-graduation-cap"></i> M.Tech AI/ML (BITS Pilani)</span>
-                            <span class="working-tag"><i class="fas fa-brain"></i> AIOps &amp; Intelligent Automation</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-head">
+                <h2 class="section-title"><span class="title-dot"></span> Featured Projects</h2>
+                <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" class="section-link">View All Projects <i class="fas fa-arrow-right"></i></a>
             </div>
-        </div>
-    </section>
 
-    <!-- Tech Stack Section -->
-    <section class="section section-alt" id="techstack">
-        <div class="container">
-            <h2 class="section-title">Tech Stack</h2>
-            <p class="section-subtitle">Technologies I work with across backend, platform, and AI</p>
-            <div class="techstack-grid">
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fab fa-python"></i></div><span class="tech-card-name">Python</span></div>
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fas fa-bolt"></i></div><span class="tech-card-name">FastAPI</span></div>
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fas fa-code"></i></div><span class="tech-card-name">Django</span></div>
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fab fa-docker"></i></div><span class="tech-card-name">Docker</span></div>
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fas fa-dharmachakra"></i></div><span class="tech-card-name">Kubernetes</span></div>
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fas fa-cogs"></i></div><span class="tech-card-name">Jenkins</span></div>
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fas fa-terminal"></i></div><span class="tech-card-name">Ansible</span></div>
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fas fa-fire"></i></div><span class="tech-card-name">Prometheus</span></div>
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fas fa-chart-line"></i></div><span class="tech-card-name">Grafana</span></div>
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fas fa-stream"></i></div><span class="tech-card-name">Kafka</span></div>
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fas fa-database"></i></div><span class="tech-card-name">ClickHouse</span></div>
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fas fa-database"></i></div><span class="tech-card-name">PostgreSQL</span></div>
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fab fa-linux"></i></div><span class="tech-card-name">Linux</span></div>
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fas fa-brain"></i></div><span class="tech-card-name">LLMs / RAG</span></div>
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fas fa-project-diagram"></i></div><span class="tech-card-name">Scikit-learn</span></div>
-                <div class="tech-card" data-tilt><div class="tech-card-icon"><i class="fab fa-git-alt"></i></div><span class="tech-card-name">Git</span></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="section" id="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item" data-animate="slide-in-left">
-                    <div class="timeline-marker"><span class="timeline-pulse"></span></div>
-                    <div class="timeline-content" data-tilt>
-                        <div class="timeline-header">
-                            <h3>Software Engineering Associate</h3>
-                            <span class="timeline-company">BT Group</span>
-                            <span class="timeline-date"><i class="far fa-calendar"></i> Aug 2024 - Present</span>
-                            <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Bengaluru, India</span>
-                        </div>
-                        <div class="timeline-body">
-                            <h4>Customer Onboarding Automation Platform (OAP)</h4>
-                            <ul>
-                                <li>Migrated enterprise automation workloads from AWX to Jenkins across multiple platforms, improving CI/CD reliability and enabling full AWX decommissioning</li>
-                                <li>Engineered enterprise OS patch automation pipelines with validation, reporting, and notification workflows, reducing manual operational effort by 95%+</li>
-                                <li>Developed backend APIs using Django, FastAPI, Python, and Jenkins API integrations to automate customer onboarding workflows end-to-end</li>
-                                <li>Integrated RASA chatbots with Jenkins and backend platforms to automate onboarding and assurance workflows, cutting manual onboarding effort by 80%</li>
-                            </ul>
-                            <h4>Platform Engineering (PreProd &amp; Production)</h4>
-                            <ul>
-                                <li>Owned end-to-end design, build, and stabilization of distributed environments across 90+ servers in PreProd and Production</li>
-                                <li>Deployed and validated distributed platforms including Kafka, ClickHouse, PostgreSQL, Kubernetes, HAProxy, Prometheus, Grafana Enterprise, Elasticsearch, and GitLab Runners</li>
-                                <li>Designed and managed Kubernetes namespaces, deployments, services, ingress, secrets, and configuration across environments</li>
-                                <li>Automated Kubernetes deployments using Jenkins, Ansible, Docker, and Python, cutting manual deployment effort by ~70% and improving consistency</li>
-                                <li>Authored reusable Python and Ansible frameworks enabling one-click infrastructure deployment, reducing provisioning time from days to under an hour</li>
-                            </ul>
-                            <h4>Observability &amp; AIOps</h4>
-                            <ul>
-                                <li>Built centralized observability with Prometheus, Grafana, Dynatrace, Elasticsearch, Logstash, custom exporters, and real-time alerting</li>
-                                <li>Resolved critical production incidents across distributed systems, ingestion pipelines, networking, and cluster synchronization while maintaining high availability</li>
-                                <li>Working on AIOps, anomaly detection, and GenAI-powered incident analysis and remediation</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item" data-animate="slide-in-left">
-                    <div class="timeline-marker"><span class="timeline-pulse"></span></div>
-                    <div class="timeline-content" data-tilt>
-                        <div class="timeline-header">
-                            <h3>Python Machine Learning &amp; Data Science Intern</h3>
-                            <span class="timeline-company">Karunadu Technologies Pvt Ltd</span>
-                            <span class="timeline-date"><i class="far fa-calendar"></i> Aug 2023 - Sep 2023</span>
-                        </div>
-                        <div class="timeline-body">
-                            <ul>
-                                <li>Built end-to-end data pipelines in Python (Pandas, NumPy) handling ingestion, cleaning, transformation, deduplication, and missing-value treatment</li>
-                                <li>Performed ETL-style data wrangling &mdash; extraction, joins, filtering, and aggregation &mdash; to prepare analysis-ready datasets</li>
-                                <li>Conducted exploratory data analysis and feature engineering with data validation and train-test preparation</li>
-                                <li>Developed and evaluated classification and regression models (Random Forest, Naive Bayes, Scikit-Learn)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section section-alt" id="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Backend, AI, and platform engineering work. Some projects are actively in development.</p>
-            <div class="projects-grid">
-
+            <div class="projects-row">
                 <!-- DeployHub -->
-                <div class="project-card" data-animate="fade-up" data-tilt>
-                    <div class="project-image">
-                        <div class="project-placeholder"><i class="fas fa-rocket"></i></div>
-                        <div class="project-badge badge-wip">In Development</div>
+                <article class="project-card" data-animate>
+                    <div class="project-top">
+                        <span class="status status-wip">In Development</span>
+                        <span class="project-glyph glyph-purple"><i class="fas fa-layer-group"></i></span>
                     </div>
-                    <div class="project-info">
-                        <span class="project-category">DevOps / Platform Engineering</span>
-                        <h3>DeployHub</h3>
-                        <p>A deployment automation platform I'm building to streamline build, artifact, and deployment workflows with validation and operational traceability. Feature set will be documented as the implementation lands.</p>
-                        <div class="project-tags">
-                            <span>Deployment Automation</span><span>CI/CD</span><span>Platform Eng</span>
-                        </div>
+                    <h3>DeployHub</h3>
+                    <p class="project-sub">Deployment Automation Platform</p>
+                    <p class="project-desc">A platform I'm building to streamline deployment workflows with build, artifact management, and environment management.</p>
+                    <div class="project-tags">
+                        <span>Jenkins</span><span>Ansible</span><span>Kubernetes</span><span>Docker</span>
                     </div>
-                </div>
+                    <div class="project-foot">
+                        <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" class="project-detail">View Details <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" class="project-gh"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </article>
 
                 <!-- PayPal AI Payment Agent -->
-                <div class="project-card" data-animate="fade-up" data-tilt>
-                    <div class="project-image">
-                        <div class="project-placeholder"><i class="fas fa-robot"></i></div>
-                        <div class="project-badge badge-wip">In Development</div>
+                <article class="project-card" data-animate>
+                    <div class="project-top">
+                        <span class="status status-wip">In Development</span>
+                        <span class="project-glyph glyph-blue"><i class="fas fa-credit-card"></i></span>
                     </div>
-                    <div class="project-info">
-                        <span class="project-category">AI Agents / FinTech</span>
-                        <h3>PayPal AI Payment Agent</h3>
-                        <p>A hackathon project exploring an AI agent for payment workflows, with an emphasis on explicit user confirmation and controlled, auditable execution. Architecture and demo to be added as the project matures.</p>
-                        <div class="project-tags">
-                            <span>AI Agent</span><span>Python</span><span>LLM</span><span>FinTech</span>
-                        </div>
+                    <h3>PayPal AI Payment Agent</h3>
+                    <p class="project-sub">AI Agent for Secure Payments</p>
+                    <p class="project-desc">An AI assistant to help users with payment-related tasks using natural language, with explicit confirmation and controlled execution.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>FastAPI</span><span>LLM Agents</span><span>PayPal API</span>
                     </div>
-                </div>
+                    <div class="project-foot">
+                        <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" class="project-detail">View Details <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" class="project-gh"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </article>
 
                 <!-- AutoOps AI -->
-                <div class="project-card" data-animate="fade-up" data-tilt>
-                    <div class="project-image">
-                        <div class="project-placeholder"><i class="fas fa-wave-square"></i></div>
-                        <div class="project-badge badge-wip">In Development</div>
+                <article class="project-card" data-animate>
+                    <div class="project-top">
+                        <span class="status status-done">Completed</span>
+                        <span class="project-glyph glyph-indigo"><i class="fas fa-brain"></i></span>
                     </div>
-                    <div class="project-info">
-                        <span class="project-category">AIOps / Self-Healing</span>
-                        <h3>AutoOps AI</h3>
-                        <p>An AIOps platform concept for alert ingestion, deduplication, and incident correlation with LLM-powered analysis and human-approved remediation. Capabilities shown here reflect the intended design and are validated as they are built.</p>
-                        <div class="project-tags">
-                            <span>FastAPI</span><span>Prometheus</span><span>Kafka</span><span>Ollama</span><span>LLaMA3</span>
-                        </div>
+                    <h3>AutoOps AI</h3>
+                    <p class="project-sub">AIOps &amp; Self-Healing Platform</p>
+                    <p class="project-desc">AI-powered incident analysis, correlation and automated remediation for infrastructure and applications, with human-approved workflows.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>FastAPI</span><span>Prometheus</span><span>Ollama</span>
                     </div>
-                </div>
+                    <div class="project-foot">
+                        <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" class="project-detail">View Details <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" class="project-gh"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </article>
 
                 <!-- OpsMind AI -->
-                <div class="project-card" data-animate="fade-up" data-tilt>
-                    <div class="project-image">
-                        <div class="project-placeholder"><i class="fas fa-comments"></i></div>
-                        <div class="project-badge">AI Powered</div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/Venugopal-14/opsmind-ai" target="_blank" rel="noopener" class="project-link" aria-label="OpsMind AI on GitHub" data-magnetic><i class="fab fa-github"></i></a>
-                        </div>
+                <article class="project-card" data-animate>
+                    <div class="project-top">
+                        <span class="status status-done">Completed</span>
+                        <span class="project-glyph glyph-purple"><i class="fas fa-robot"></i></span>
                     </div>
-                    <div class="project-info">
-                        <span class="project-category">AI-Powered AIOps</span>
-                        <h3>OpsMind AI</h3>
-                        <p>An AI-assisted DevOps assistant integrating GenAI and RAG for incident analysis, contextual runbook retrieval, and remediation recommendations.</p>
-                        <div class="project-tags">
-                            <span>LLaMA3</span><span>RAG</span><span>FAISS</span><span>FastAPI</span><span>GenAI</span>
-                        </div>
+                    <h3>OpsMind AI</h3>
+                    <p class="project-sub">AI-Powered AIOps</p>
+                    <p class="project-desc">AI-assisted DevOps platform for incident analysis, contextual runbook retrieval and remediation recommendations.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>RAG</span><span>LLM</span><span>Vector DB</span>
                     </div>
-                </div>
-
-                <!-- Loan Default Prediction -->
-                <div class="project-card" data-animate="fade-up" data-tilt>
-                    <div class="project-image">
-                        <div class="project-placeholder"><i class="fas fa-money-check-alt"></i></div>
-                        <div class="project-badge">Machine Learning</div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" class="project-link" aria-label="GitHub profile" data-magnetic><i class="fab fa-github"></i></a>
-                        </div>
+                    <div class="project-foot">
+                        <a href="https://github.com/Venugopal-14/opsmind-ai" target="_blank" rel="noopener" class="project-detail">View Details <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/Venugopal-14/opsmind-ai" target="_blank" rel="noopener" class="project-gh"><i class="fab fa-github"></i> GitHub</a>
                     </div>
-                    <div class="project-info">
-                        <span class="project-category">Machine Learning</span>
-                        <h3>Loan Default Prediction</h3>
-                        <p>An ML prediction system using Python, Flask, and Random Forest, with an end-to-end pipeline covering data processing, feature engineering, and an interactive UI.</p>
-                        <div class="project-tags">
-                            <span>Python</span><span>Flask</span><span>Random Forest</span><span>Scikit-learn</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Airline Satisfaction -->
-                <div class="project-card" data-animate="fade-up" data-tilt>
-                    <div class="project-image">
-                        <div class="project-placeholder"><i class="fas fa-plane"></i></div>
-                        <div class="project-badge">Django + ML</div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" class="project-link" aria-label="GitHub profile" data-magnetic><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Django + ML</span>
-                        <h3>Airline Satisfaction Prediction</h3>
-                        <p>A full-stack ML platform built with Django, Python, and Naive Bayes, including an ETL pipeline on a large airline dataset and a user-facing prediction interface.</p>
-                        <div class="project-tags">
-                            <span>Django</span><span>Python</span><span>Naive Bayes</span><span>Pandas</span>
-                        </div>
-                    </div>
-                </div>
-
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
+    <!-- About + Tech Stack row -->
+    <section class="section section-split" id="about">
+        <div class="container about-techstack">
+            <!-- About -->
+            <div class="about-block">
+                <div class="section-head">
+                    <h2 class="section-title"><span class="title-dot"></span> About Me</h2>
+                </div>
+                <p class="about-text">
+                    I'm a Software Engineer with nearly 2 years of experience at BT Group, working on
+                    platform engineering, backend development, automation and observability. I enjoy
+                    building systems that solve real-world problems using a combination of software
+                    engineering, infrastructure and AI.
+                </p>
+                <div class="about-pills">
+                    <span class="about-pill"><i class="fas fa-code"></i> Backend Development</span>
+                    <span class="about-pill"><i class="fas fa-gears"></i> Platform Engineering</span>
+                    <span class="about-pill"><i class="fas fa-chart-column"></i> Observability &amp; AIOps</span>
+                    <span class="about-pill"><i class="fas fa-brain"></i> AI/ML Engineering</span>
+                </div>
+                <a href="#experience" class="btn btn-primary btn-sm">Know More About Me</a>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="techstack-block" id="techstack">
+                <div class="section-head">
+                    <h2 class="section-title"><span class="title-dot dot-blue"></span> Tech Stack</h2>
+                    <a href="#techstack" class="section-link">View All Skills <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-tile" data-animate><i class="fab fa-python" style="color:#3776ab"></i><span>Python</span></div>
+                    <div class="tech-tile" data-animate><i class="fas fa-bolt" style="color:#059669"></i><span>FastAPI</span></div>
+                    <div class="tech-tile" data-animate><i class="fas fa-dharmachakra" style="color:#092e20;background:#fff"></i><span>Django</span></div>
+                    <div class="tech-tile" data-animate><i class="fab fa-java" style="color:#e76f00"></i><span>Java</span></div>
+                    <div class="tech-tile" data-animate><i class="fas fa-database" style="color:#00758f"></i><span>MySQL</span></div>
+                    <div class="tech-tile" data-animate><i class="fas fa-database" style="color:#336791"></i><span>PostgreSQL</span></div>
+                    <div class="tech-tile" data-animate><i class="fas fa-table-cells" style="color:#ffcc01"></i><span>ClickHouse</span></div>
+                    <div class="tech-tile" data-animate><i class="fas fa-stream" style="color:#231f20"></i><span>Kafka</span></div>
+                    <div class="tech-tile" data-animate><i class="fab fa-docker" style="color:#2496ed"></i><span>Docker</span></div>
+                    <div class="tech-tile" data-animate><i class="fas fa-dharmachakra" style="color:#326ce5"></i><span>Kubernetes</span></div>
+                    <div class="tech-tile" data-animate><i class="fas fa-gears" style="color:#d33833"></i><span>Jenkins</span></div>
+                    <div class="tech-tile" data-animate><i class="fas fa-terminal" style="color:#1a1918"></i><span>Ansible</span></div>
+                    <div class="tech-tile" data-animate><i class="fas fa-fire" style="color:#e6522c"></i><span>Prometheus</span></div>
+                    <div class="tech-tile" data-animate><i class="fas fa-chart-line" style="color:#f46800"></i><span>Grafana</span></div>
+                    <div class="tech-tile" data-animate><i class="fas fa-magnifying-glass" style="color:#005571"></i><span>Elasticsearch</span></div>
+                    <div class="tech-tile" data-animate><i class="fab fa-linux" style="color:#1a1918"></i><span>Linux</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <div class="section-head center">
+                <h2 class="section-title"><span class="title-dot"></span> Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-top">
+                            <div>
+                                <h3>Software Engineering Associate</h3>
+                                <span class="timeline-company">BT Group</span>
+                            </div>
+                            <div class="timeline-meta">
+                                <span><i class="far fa-calendar"></i> Aug 2024 - Present</span>
+                                <span><i class="fas fa-location-dot"></i> Bengaluru, India</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Migrated enterprise automation workloads from AWX to Jenkins, improving CI/CD reliability and enabling full AWX decommissioning.</li>
+                            <li>Engineered enterprise OS patch automation pipelines with validation, reporting and notifications, reducing manual effort by 95%+.</li>
+                            <li>Built backend APIs with Django, FastAPI, Python and Jenkins integrations to automate customer onboarding end-to-end; cut manual onboarding effort by 80% with RASA chatbots.</li>
+                            <li>Designed and automated Kubernetes deployments across 90+ servers using Jenkins, Ansible, Docker and Python, with centralized observability via Prometheus, Grafana, Dynatrace and Elasticsearch.</li>
+                            <li>Working on AIOps, anomaly detection and GenAI-powered incident analysis and remediation.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-top">
+                            <div>
+                                <h3>Python ML &amp; Data Science Intern</h3>
+                                <span class="timeline-company">Karunadu Technologies Pvt Ltd</span>
+                            </div>
+                            <div class="timeline-meta">
+                                <span><i class="far fa-calendar"></i> Aug 2023 - Sep 2023</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Built end-to-end data pipelines in Python (Pandas, NumPy) for ingestion, cleaning, transformation and deduplication.</li>
+                            <li>Performed ETL-style data wrangling and exploratory data analysis with feature engineering and data validation.</li>
+                            <li>Developed and evaluated classification and regression models (Random Forest, Naive Bayes, Scikit-Learn).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
     <section class="section" id="education">
         <div class="container">
-            <h2 class="section-title">Education &amp; Certifications</h2>
-            <div class="education-grid">
-                <div class="edu-card edu-card-highlight" data-animate="fade-up" data-tilt>
-                    <div class="edu-badge">Pursuing</div>
-                    <div class="edu-icon"><i class="fas fa-brain"></i></div>
-                    <h3>M.Tech in Artificial Intelligence &amp; Machine Learning</h3>
-                    <span class="edu-institution">BITS Pilani</span>
-                    <p class="edu-description">Advanced coursework in Machine Learning, Deep Learning, NLP, and AI systems design.</p>
-                </div>
-                <div class="edu-card" data-animate="fade-up" data-tilt>
-                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <h3>Bachelor of Engineering in Information Science</h3>
-                    <span class="edu-institution">STJ Institute of Technology, Ranebennur</span>
-                    <span class="edu-date"><i class="far fa-calendar"></i> 2020 - 2024</span>
-                </div>
+            <div class="section-head center">
+                <h2 class="section-title"><span class="title-dot dot-blue"></span> Education &amp; Certifications</h2>
             </div>
-
-            <h3 class="subsection-title">Certifications &amp; Training</h3>
-            <div class="certs-grid">
-                <div class="cert-card" data-animate="fade-up" data-tilt>
-                    <div class="cert-icon"><i class="fab fa-redhat"></i></div>
-                    <h4>Red Hat Certified Engineer (EX294) &mdash; Cert Prep</h4>
-                    <span>LinkedIn Learning (prep course)</span>
+            <div class="edu-wrap">
+                <div class="edu-col">
+                    <h3 class="col-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="edu-card edu-highlight" data-animate>
+                        <span class="edu-tag">Pursuing</span>
+                        <h4>M.Tech in Artificial Intelligence &amp; Machine Learning</h4>
+                        <span class="edu-org">BITS Pilani</span>
+                    </div>
+                    <div class="edu-card" data-animate>
+                        <h4>B.E. in Information Science</h4>
+                        <span class="edu-org">STJ Institute of Technology, Ranebennur</span>
+                        <span class="edu-date">2020 - 2024</span>
+                    </div>
                 </div>
-                <div class="cert-card" data-animate="fade-up" data-tilt>
-                    <div class="cert-icon"><i class="fas fa-dharmachakra"></i></div>
-                    <h4>Kubernetes Foundations</h4>
-                    <span>Pluralsight</span>
-                </div>
-                <div class="cert-card" data-animate="fade-up" data-tilt>
-                    <div class="cert-icon"><i class="fas fa-terminal"></i></div>
-                    <h4>Ansible Fundamentals</h4>
-                    <span>Pluralsight</span>
-                </div>
-                <div class="cert-card" data-animate="fade-up" data-tilt>
-                    <div class="cert-icon"><i class="fas fa-fire"></i></div>
-                    <h4>Getting Started with Prometheus</h4>
-                    <span>Pluralsight</span>
-                </div>
-                <div class="cert-card" data-animate="fade-up" data-tilt>
-                    <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
-                    <h4>Dashboards &amp; Monitoring with Grafana</h4>
-                    <span>Pluralsight</span>
-                </div>
-                <div class="cert-card" data-animate="fade-up" data-tilt>
-                    <div class="cert-icon"><i class="fas fa-brain"></i></div>
-                    <h4>Prompt Engineering with Generative AI</h4>
-                    <span>Pluralsight</span>
+                <div class="edu-col">
+                    <h3 class="col-title"><i class="fas fa-certificate"></i> Certifications &amp; Training</h3>
+                    <div class="cert-list">
+                        <div class="cert-row" data-animate><i class="fab fa-redhat"></i><div><strong>Red Hat Certified Engineer (EX294) — Cert Prep</strong><span>LinkedIn Learning (prep course)</span></div></div>
+                        <div class="cert-row" data-animate><i class="fas fa-dharmachakra"></i><div><strong>Kubernetes Foundations</strong><span>Pluralsight</span></div></div>
+                        <div class="cert-row" data-animate><i class="fas fa-terminal"></i><div><strong>Ansible Fundamentals</strong><span>Pluralsight</span></div></div>
+                        <div class="cert-row" data-animate><i class="fas fa-fire"></i><div><strong>Getting Started with Prometheus</strong><span>Pluralsight</span></div></div>
+                        <div class="cert-row" data-animate><i class="fas fa-chart-line"></i><div><strong>Dashboards &amp; Monitoring with Grafana</strong><span>Pluralsight</span></div></div>
+                        <div class="cert-row" data-animate><i class="fas fa-brain"></i><div><strong>Prompt Engineering with Generative AI</strong><span>Pluralsight</span></div></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section class="section section-alt" id="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <p class="contact-description" data-animate="fade-up">
-                        Interested in backend engineering, AI/ML, or platform engineering collaboration?
-                        Let's connect &mdash; I'm always open to new opportunities.
-                    </p>
-                    <div class="contact-details" data-animate="fade-up">
-                        <a class="contact-item" href="mailto:venugopal.dev7@gmail.com">
-                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                            <span>venugopal.dev7@gmail.com</span>
-                        </a>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <span>Bengaluru, Karnataka, India</span>
-                        </div>
-                        <a class="contact-item" href="tel:+919731458079">
-                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                            <span>(+91) 97314 58079</span>
-                        </a>
-                    </div>
-                    <div class="contact-socials" data-animate="fade-up">
-                        <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" data-magnetic><i class="fab fa-github"></i> GitHub</a>
-                        <a href="https://linkedin.com/in/venugopal-a-b8928a26b" target="_blank" rel="noopener" data-magnetic><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    </div>
+            <div class="section-head center">
+                <h2 class="section-title"><span class="title-dot"></span> Get In Touch</h2>
+                <p class="section-sub">Interested in backend engineering, AI/ML or platform engineering collaboration? Let's connect.</p>
+            </div>
+            <div class="contact-wrap">
+                <div class="contact-cards">
+                    <a class="contact-card" href="mailto:venugopal.dev7@gmail.com">
+                        <span class="contact-ic"><i class="fas fa-envelope"></i></span>
+                        <div><strong>Email</strong><span>venugopal.dev7@gmail.com</span></div>
+                    </a>
+                    <a class="contact-card" href="tel:+919731458079">
+                        <span class="contact-ic"><i class="fas fa-phone"></i></span>
+                        <div><strong>Phone</strong><span>(+91) 97314 58079</span></div>
+                    </a>
+                    <a class="contact-card" href="https://linkedin.com/in/venugopal-a-b8928a26b" target="_blank" rel="noopener">
+                        <span class="contact-ic"><i class="fab fa-linkedin-in"></i></span>
+                        <div><strong>LinkedIn</strong><span>venugopal-a</span></div>
+                    </a>
+                    <a class="contact-card" href="https://github.com/Venugopal-14" target="_blank" rel="noopener">
+                        <span class="contact-ic"><i class="fab fa-github"></i></span>
+                        <div><strong>GitHub</strong><span>Venugopal-14</span></div>
+                    </a>
                 </div>
-                <form class="contact-form" id="contact-form" data-animate="fade-up">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        <span class="form-highlight"></span>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        <span class="form-highlight"></span>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        <span class="form-highlight"></span>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                        <span class="form-highlight"></span>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full" data-magnetic>
-                        <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
-                    </button>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group"><input type="text" name="name" placeholder="Your Name" required></div>
+                    <div class="form-group"><input type="email" name="email" placeholder="Your Email" required></div>
+                    <div class="form-group"><input type="text" name="subject" placeholder="Subject" required></div>
+                    <div class="form-group"><textarea name="message" rows="4" placeholder="Your Message" required></textarea></div>
+                    <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send Message</button>
                 </form>
             </div>
         </div>
@@ -482,22 +397,16 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Venugopal A &middot; Software Engineer | AI &amp; Platform Engineering</p>
-                <div class="footer-socials">
-                    <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" aria-label="GitHub" data-magnetic><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/venugopal-a-b8928a26b" target="_blank" rel="noopener" aria-label="LinkedIn" data-magnetic><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:venugopal.dev7@gmail.com" aria-label="Email" data-magnetic><i class="fas fa-envelope"></i></a>
-                </div>
+        <div class="container footer-content">
+            <p>&copy; 2026 Venugopal A &middot; Software Engineer | AI &amp; Platform Engineering</p>
+            <div class="footer-socials">
+                <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/venugopal-a-b8928a26b" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:venugopal.dev7@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- GSAP & ScrollTrigger (progressive enhancement; site works without them) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
