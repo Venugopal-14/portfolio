@@ -43,14 +43,21 @@ until you add it:
    git commit -m "Add resume PDF"
    ```
 
-## Project statuses
+## Projects — ownership & status
 
-| Project                 | Status          |
-|-------------------------|-----------------|
-| DeployHub               | In Development  |
-| PayPal AI Payment Agent | In Development  |
-| AutoOps AI              | Completed       |
-| OpsMind AI              | Completed       |
+Project cards stay visually clean; each **View Details** opens a case-study
+modal with the full technical write-up.
+
+| Project                 | Ownership                     | Status         |
+|-------------------------|-------------------------------|----------------|
+| DeployHub               | Enterprise (BT Group)         | Professional   |
+| AutoOps AI              | Enterprise (BT Group)         | Professional   |
+| PayPal AI Payment Agent | Personal / Hackathon          | In Development  |
+| OpsMind AI              | Personal (links to repo)      | Completed      |
+
+Enterprise (BT Group) projects are marked **"Internal"** — no public repo link,
+no confidential internal architecture, credentials or customer data published.
+Only OpsMind AI links to a public repository.
 
 ## Local preview
 
