@@ -317,3 +317,66 @@ h1, h2, h3, h4 { font-family: var(--font); color: var(--text); line-height: 1.2;
     *, *::before, *::after { animation: none !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
     [data-animate] { opacity: 1; transform: none; }
 }
+
+/* ===== Content-accuracy additions ===== */
+
+/* Enterprise / muted project badges + footers */
+.status-ent { background: #ede9fe; color: #6b46e5; }
+.section-link-static { color: var(--text-muted); font-size: 0.84rem; font-weight: 500; }
+.project-gh-ent { color: var(--purple); }
+.project-gh-muted { color: #c2770c; }
+.project-detail { background: none; border: none; cursor: pointer; font-family: var(--font); }
+
+/* Experience sub-headings + scope */
+.exp-subhead { font-size: 0.92rem; color: var(--text); margin: 18px 0 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.exp-subhead:first-of-type { margin-top: 0; }
+.exp-scope { font-size: 0.72rem; font-weight: 600; color: var(--purple); background: var(--bg-lavender); border: 1px solid var(--border-soft); padding: 2px 10px; border-radius: 50px; }
+
+/* Grouped skills */
+.skills-groups { display: flex; flex-direction: column; gap: 18px; }
+.skill-group h4 { font-size: 0.9rem; color: var(--text); display: flex; align-items: center; gap: 9px; margin-bottom: 10px; }
+.skill-group h4 i { color: var(--purple); font-size: 0.95rem; }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.skill-tags span { font-size: 0.76rem; font-weight: 500; color: var(--text-soft); background: var(--card); border: 1px solid var(--border); padding: 6px 13px; border-radius: 50px; transition: var(--transition); }
+.skill-tags span:hover { border-color: #e0d9fb; color: var(--purple); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+
+/* ===== Modal (case study) ===== */
+.modal-overlay {
+    position: fixed; inset: 0; z-index: 2000;
+    background: rgba(30, 27, 50, 0.55); backdrop-filter: blur(4px);
+    display: flex; align-items: center; justify-content: center; padding: 24px;
+    opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.modal-overlay.open { opacity: 1; visibility: visible; }
+.modal {
+    background: #fff; border-radius: var(--radius); max-width: 640px; width: 100%;
+    max-height: 86vh; overflow-y: auto; padding: 34px; position: relative;
+    box-shadow: var(--shadow-lg); display: none;
+    transform: translateY(16px) scale(0.98); transition: transform 0.3s ease;
+}
+.modal.active { display: block; }
+.modal-overlay.open .modal.active { transform: translateY(0) scale(1); }
+.modal-close {
+    position: absolute; top: 16px; right: 18px; background: var(--bg-lavender);
+    border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 1.4rem;
+    line-height: 1; color: var(--text-soft); cursor: pointer; transition: var(--transition);
+}
+.modal-close:hover { background: var(--purple); color: #fff; }
+.modal-head { margin-bottom: 20px; padding-right: 40px; }
+.modal-badge { display: inline-block; font-size: 0.7rem; font-weight: 700; padding: 5px 13px; border-radius: 50px; margin-bottom: 12px; }
+.badge-ent { background: #ede9fe; color: #6b46e5; }
+.badge-wip { background: #fef3e2; color: #c2770c; }
+.badge-done { background: #e3f9ec; color: #15803d; }
+.modal-head h2 { font-size: 1.4rem; margin-bottom: 8px; }
+.modal-tagline { color: var(--text-soft); font-size: 0.92rem; }
+.modal-body h3 { font-size: 1rem; margin: 20px 0 10px; color: var(--text); }
+.modal-body ul { display: flex; flex-direction: column; gap: 9px; }
+.modal-body li { position: relative; padding-left: 20px; font-size: 0.88rem; color: var(--text-soft); }
+.modal-body li::before { content: ''; position: absolute; left: 0; top: 9px; width: 6px; height: 6px; border-radius: 50%; background: var(--purple-light); }
+.modal-body li strong { color: var(--text); }
+.modal-note { background: var(--bg-lavender); border: 1px solid var(--border-soft); border-radius: var(--radius-sm); padding: 12px 14px; font-size: 0.82rem; color: var(--text-soft); display: flex; align-items: flex-start; gap: 9px; margin-bottom: 6px; }
+.modal-note i { color: var(--purple); margin-top: 2px; }
+.modal-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+.modal-tags span { font-size: 0.74rem; font-weight: 500; color: var(--text-soft); background: var(--bg-lavender); border: 1px solid var(--border-soft); padding: 5px 12px; border-radius: 6px; }
+.modal-cta { margin-top: 20px; }
+body.modal-open { overflow: hidden; }

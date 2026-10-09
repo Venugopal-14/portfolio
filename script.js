@@ -94,6 +94,40 @@
         });
     })();
 
+    // ===== Case-study modals =====
+    (function modals() {
+        const overlay = document.getElementById('modal-overlay');
+        if (!overlay) return;
+        const triggers = document.querySelectorAll('[data-modal]');
+        const modals = overlay.querySelectorAll('.modal');
+        let lastFocused = null;
+
+        function open(id) {
+            const target = document.getElementById('modal-' + id);
+            if (!target) return;
+            lastFocused = document.activeElement;
+            modals.forEach(m => m.classList.remove('active'));
+            target.classList.add('active');
+            overlay.classList.add('open');
+            overlay.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('modal-open');
+            const closeBtn = target.querySelector('.modal-close');
+            if (closeBtn) closeBtn.focus();
+        }
+        function close() {
+            overlay.classList.remove('open');
+            overlay.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('modal-open');
+            modals.forEach(m => m.classList.remove('active'));
+            if (lastFocused && lastFocused.focus) lastFocused.focus();
+        }
+
+        triggers.forEach(t => t.addEventListener('click', () => open(t.getAttribute('data-modal'))));
+        overlay.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', close));
+        overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && overlay.classList.contains('open')) close(); });
+    })();
+
     function notify(message, type) {
         const existing = document.querySelector('.notification');
         if (existing) existing.remove();
