@@ -28,21 +28,6 @@ Plain, dependency-light static site:
    AutoOps AI) are clearly labelled **In Development**. No invented metrics,
    repos, or completed features.
 
-## Adding your CV (required for the download button)
-
-The download buttons point to **`Venugopal_A_CV.pdf`** at the repo root. That
-file is **not committed yet**. To make the button work:
-
-1. Copy your résumé PDF into this folder.
-2. Rename it to exactly: `Venugopal_A_CV.pdf`
-3. Commit it:
-   ```bash
-   git add Venugopal_A_CV.pdf
-   git commit -m "Add resume PDF"
-   ```
-
-Until then the button will 404 on click.
-
 ## Adding a profile photo (optional)
 
 The hero and about sections use a designed **"VA" initials avatar** so there is
