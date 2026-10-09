@@ -6,58 +6,70 @@ automation, observability).
 
 **Live site:** https://venugopal-14.github.io/portfolio/
 
+## Design
+
+A premium **light theme** — white / soft lavender background with purple and
+blue accents, large elegant typography, and generous whitespace.
+
+- Hero: content on the left, a hand-built **CSS/SVG illustration** on the right
+  (laptop with code, plant, coffee cup, a "Build → Automate → Deploy → Repeat"
+  stack, and a quote card). No personal photo, no monitoring-dashboard widgets.
+- Featured Projects: four cards in a horizontal row on desktop.
+- About Me + Tech Stack side by side.
+- Experience timeline, Education & Certifications, Contact.
+- Fully responsive (desktop / tablet / mobile) with reduced-motion fallbacks.
+
 ## Stack
 
-Plain, dependency-light static site:
+Dependency-light static site:
 
 - `index.html` — markup and content
-- `style.css` — premium dark navy/cyan/violet theme, fully responsive
-- `script.js` — progressive-enhancement interactions
-- GSAP (loaded from CDN) is used only for animation **enhancement**
+- `style.css` — light theme, illustration, layout, responsive rules
+- `script.js` — vanilla JS (scroll reveal, nav, mobile menu, contact form).
+  No external animation library — animations are CSS-driven, so nothing breaks
+  if a CDN is slow.
 
-## Design principles
+## ⚠️ CV download (action needed)
 
-1. **Content-first / graceful degradation** — all text, buttons, and links are
-   visible by default from HTML + CSS. JavaScript and GSAP only *enhance* with
-   animation. If the GSAP CDN fails to load, or JS is disabled, the page still
-   renders correctly (this was the original bug: the hero title and image were
-   invisible because they depended entirely on JS).
-2. **Accessibility** — respects `prefers-reduced-motion`, uses `:focus-visible`
-   outlines, `aria-label`s, and keeps the custom cursor to fine-pointer devices.
-3. **Honesty** — in-progress projects (DeployHub, PayPal AI Payment Agent,
-   AutoOps AI) are clearly labelled **In Development**. No invented metrics,
-   repos, or completed features.
+Both **Download CV** buttons (navbar + hero) point to **`Venugopal_A_CV.pdf`**
+at the repo root. That file is **not committed yet**, so the download will 404
+until you add it:
 
-## Adding a profile photo (optional)
+1. Copy your résumé PDF into this folder.
+2. Rename it to exactly: `Venugopal_A_CV.pdf`
+3. Commit it:
+   ```bash
+   git add Venugopal_A_CV.pdf
+   git commit -m "Add resume PDF"
+   ```
 
-The hero and about sections use a designed **"VA" initials avatar** so there is
-never a broken image. If you want a real photo instead:
+## Project statuses
 
-1. Add `profile.jpg` to this folder.
-2. In `index.html`, replace the two `<div class="avatar ...">...</div>` blocks
-   with `<img src="profile.jpg" alt="Venugopal A" class="hero-photo">` (and the
-   about one with `class="about-photo"`), then add matching styles.
+| Project                 | Status          |
+|-------------------------|-----------------|
+| DeployHub               | In Development  |
+| PayPal AI Payment Agent | In Development  |
+| AutoOps AI              | Completed       |
+| OpsMind AI              | Completed       |
 
 ## Local preview
 
-It's a static site — just open `index.html` in a browser. Or serve it:
+Static site — just open `index.html` in a browser. Or serve it:
 
 ```bash
-# Node
-npx serve .
-# Python
-python -m http.server 8000
+npx serve .            # Node
+python -m http.server  # Python
 ```
 
 ## Deploy (GitHub Pages)
 
-The repo is already published via GitHub Pages from the `main` branch. These
-changes are on the `portfolio-upgrade` branch. After you review and approve:
+Changes are on the `light-redesign` branch. After you review and approve:
 
 ```bash
 git checkout main
-git merge portfolio-upgrade
+git merge light-redesign
 git push origin main
 ```
 
-Do **not** push until you've reviewed the result and added the CV PDF.
+GitHub Pages redeploys automatically. If you see an old version, hard-refresh
+(`Ctrl + Shift + R`) or open an incognito window — it's browser cache.
