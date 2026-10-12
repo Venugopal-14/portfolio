@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://venugopal-14.github.io/portfolio/">
 
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=5">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@600&display=swap" rel="stylesheet">
@@ -60,6 +60,12 @@
                     <a href="https://github.com/Venugopal-14" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://linkedin.com/in/venugopal-a-b8928a26b" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     <a href="mailto:venugopal.dev7@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="hero-focus">
+                    <span><i class="fas fa-server"></i> Backend Engineering</span>
+                    <span><i class="fas fa-brain"></i> AI / ML</span>
+                    <span><i class="fas fa-gears"></i> Platform Engineering</span>
+                    <span><i class="fas fa-bolt"></i> Intelligent Automation</span>
                 </div>
             </div>
 
@@ -130,49 +136,77 @@
             <div class="work-grid">
                 <!-- DeployHub (BT Group) -->
                 <button type="button" class="work-card" data-modal="deployhub">
-                    <div class="work-thumb thumb-purple"><i class="fas fa-layer-group"></i></div>
+                    <div class="work-thumb thumb-purple">
+                        <i class="fas fa-layer-group"></i>
+                        <span class="thumb-mini"><b></b><b></b><b></b></span>
+                    </div>
                     <div class="work-body">
                         <span class="work-label label-ent">Enterprise · BT Group</span>
                         <h3>DeployHub</h3>
-                        <p>Deployment automation across distributed Kubernetes environments.</p>
+                        <p class="work-problem">Manual, inconsistent Kubernetes deployments across many environments slowed delivery.</p>
+                        <ul class="work-highlights">
+                            <li>One-click deploys via Jenkins + Ansible</li>
+                            <li>Ingress routing &amp; deployment validation</li>
+                        </ul>
                         <div class="work-chips"><span>Jenkins</span><span>Ansible</span><span>Kubernetes</span></div>
-                        <span class="work-explore">Explore Project <i class="fas fa-arrow-right"></i></span>
+                        <span class="work-explore">Explore Case Study <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </button>
 
                 <!-- AutoOps AI (BT Group) -->
                 <button type="button" class="work-card" data-modal="autoops">
-                    <div class="work-thumb thumb-indigo"><i class="fas fa-brain"></i></div>
+                    <div class="work-thumb thumb-indigo">
+                        <i class="fas fa-brain"></i>
+                        <span class="thumb-mini"><b></b><b></b><b></b></span>
+                    </div>
                     <div class="work-body">
                         <span class="work-label label-ent">Enterprise · BT Group</span>
                         <h3>AutoOps AI</h3>
-                        <p>Intelligent operations — AI-driven incident analysis and remediation.</p>
+                        <p class="work-problem">Alert noise and manual triage made incident response slow and error-prone.</p>
+                        <ul class="work-highlights">
+                            <li>LLM root-cause analysis with ops context</li>
+                            <li>Human-approved Jenkins/Ansible remediation</li>
+                        </ul>
                         <div class="work-chips"><span>FastAPI</span><span>LLaMA3</span><span>Prometheus</span></div>
-                        <span class="work-explore">Explore Project <i class="fas fa-arrow-right"></i></span>
+                        <span class="work-explore">Explore Case Study <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </button>
 
                 <!-- PayPal AI Payment Agent (hackathon) -->
                 <button type="button" class="work-card" data-modal="paypal">
-                    <div class="work-thumb thumb-blue"><i class="fas fa-credit-card"></i></div>
+                    <div class="work-thumb thumb-blue">
+                        <i class="fas fa-credit-card"></i>
+                        <span class="thumb-mini"><b></b><b></b><b></b></span>
+                    </div>
                     <div class="work-body">
                         <span class="work-label label-wip">Hackathon · In development</span>
                         <h3>PayPal AI Payment Agent</h3>
-                        <p>An AI agent for safe, confirmation-first payment workflows.</p>
+                        <p class="work-problem">Payment tasks are rigid; natural-language flows must stay safe and auditable.</p>
+                        <ul class="work-highlights">
+                            <li>Confirmation-first agent workflow</li>
+                            <li>Controlled, auditable execution</li>
+                        </ul>
                         <div class="work-chips"><span>Python</span><span>FastAPI</span><span>LLM Agents</span></div>
-                        <span class="work-explore">Explore Project <i class="fas fa-arrow-right"></i></span>
+                        <span class="work-explore">Explore Case Study <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </button>
 
                 <!-- OpsMind AI (personal) -->
                 <button type="button" class="work-card" data-modal="opsmind">
-                    <div class="work-thumb thumb-violet"><i class="fas fa-robot"></i></div>
+                    <div class="work-thumb thumb-violet">
+                        <i class="fas fa-robot"></i>
+                        <span class="thumb-mini"><b></b><b></b><b></b></span>
+                    </div>
                     <div class="work-body">
                         <span class="work-label label-personal">Personal · Completed</span>
                         <h3>OpsMind AI</h3>
-                        <p>AI-assisted DevOps copilot for incident triage with RAG.</p>
+                        <p class="work-problem">Engineers waste time hunting runbooks during incidents.</p>
+                        <ul class="work-highlights">
+                            <li>RAG retrieval over runbook context</li>
+                            <li>LLM remediation recommendations</li>
+                        </ul>
                         <div class="work-chips"><span>Python</span><span>RAG</span><span>LLM</span></div>
-                        <span class="work-explore">Explore Project <i class="fas fa-arrow-right"></i></span>
+                        <span class="work-explore">Explore Case Study <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </button>
             </div>
@@ -192,16 +226,52 @@
             </div>
             <div class="modal-body">
                 <p class="modal-note"><i class="fas fa-circle-info"></i> Part of my professional work at BT Group. Internal architecture, credentials and confidential details are intentionally omitted.</p>
-                <h3>What I worked on</h3>
+
+                <h3>Overview &amp; problem</h3>
+                <p class="cs-text">Across multiple PreProd and Production environments, Kubernetes application deployments were manual and inconsistent — slow to run, hard to repeat, and prone to configuration drift. The goal was repeatable, one-click deployments with validation built in.</p>
+
+                <h3>My role &amp; contributions</h3>
                 <ul>
-                    <li>Automated Kubernetes application deployments using Jenkins, Ansible, Docker, Python and GitLab, improving deployment consistency across environments.</li>
-                    <li>Designed and managed Kubernetes namespaces, deployments, services, ingress resources, secrets and configuration management.</li>
-                    <li>Implemented HAProxy ingress routing, deployment validation and application onboarding across multiple environments.</li>
-                    <li>Authored reusable Python and Ansible automation frameworks enabling one-click infrastructure deployment, reducing provisioning time from days to under an hour.</li>
-                    <li>Troubleshot pod failures, networking issues, ingress connectivity and cluster-level incidents to maintain platform stability.</li>
+                    <li>Owned the deployment-automation workflow: Jenkins pipelines, Ansible roles and GitLab integration.</li>
+                    <li>Designed Kubernetes namespaces, deployments, services, ingress, secrets and configuration management.</li>
+                    <li>Authored reusable Python/Ansible frameworks for one-click provisioning.</li>
                 </ul>
-                <h3>Technologies</h3>
+
+                <h3>Architecture</h3>
+                <div class="cs-flow">
+                    <span class="cs-node"><i class="fab fa-git-alt"></i>GitLab</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node"><i class="fas fa-gears"></i>Jenkins</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node"><i class="fas fa-terminal"></i>Ansible</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node accent"><i class="fas fa-dharmachakra"></i>Kubernetes</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node"><i class="fas fa-shield-halved"></i>Validation</span>
+                </div>
+
+                <h3>Workflow</h3>
+                <ul>
+                    <li>Code/config changes in GitLab trigger a Jenkins pipeline.</li>
+                    <li>Ansible applies Kubernetes manifests and configuration consistently across environments.</li>
+                    <li>HAProxy ingress routing and post-deploy validation confirm the release is healthy.</li>
+                </ul>
+
+                <h3>Challenges &amp; solutions</h3>
+                <ul>
+                    <li><strong>Config drift:</strong> standardized reusable Ansible roles so every environment deploys identically.</li>
+                    <li><strong>Slow provisioning:</strong> one-click automation reduced provisioning from days to under an hour.</li>
+                    <li><strong>Reliability:</strong> added deployment validation and ingress checks to catch failures early.</li>
+                </ul>
+
+                <h3>Technology stack</h3>
                 <div class="modal-tags"><span>Jenkins</span><span>Ansible</span><span>Kubernetes</span><span>Docker</span><span>GitLab</span><span>HAProxy</span><span>Python</span></div>
+
+                <h3>Verified results</h3>
+                <ul>
+                    <li>Provisioning time reduced from days to under an hour.</li>
+                    <li>More consistent, repeatable deployments across environments.</li>
+                </ul>
             </div>
         </div>
 
@@ -215,17 +285,58 @@
             </div>
             <div class="modal-body">
                 <p class="modal-note"><i class="fas fa-circle-info"></i> Associated with my engineering work at BT Group. Confidential internal infrastructure details are intentionally omitted.</p>
-                <h3>Core capabilities</h3>
+
+                <h3>Overview &amp; problem</h3>
+                <p class="cs-text">High alert volume and manual triage made incident response slow and noisy. AutoOps AI reduces that noise and assists engineers with context-rich analysis — while keeping humans in control of any remediation.</p>
+
+                <h3>My role &amp; contributions</h3>
                 <ul>
-                    <li><strong>Ingestion &amp; deduplication:</strong> continuous alert ingestion with fingerprint-based deduplication to suppress noise.</li>
-                    <li><strong>Correlation &amp; SLA tracking:</strong> alert-to-incident correlation, assignment and severity-based SLA tracking.</li>
-                    <li><strong>LLM-powered reasoning:</strong> incident analysis using Ollama with LLaMA3/Qwen, Prometheus data and incident context for root-cause analysis and remediation recommendations.</li>
-                    <li><strong>Approved remediation:</strong> human-approved remediation executed through Jenkins jobs and Ansible playbooks.</li>
-                    <li><strong>Recovery validation:</strong> post-remediation validation via Prometheus with full audit logging.</li>
-                    <li><strong>Backend:</strong> FastAPI services, background workers, MySQL persistence and PromQL query caching.</li>
+                    <li>Built FastAPI services and background workers for the ingestion and analysis pipeline.</li>
+                    <li>Implemented fingerprint-based deduplication and alert-to-incident correlation.</li>
+                    <li>Integrated LLM reasoning (Ollama) with operational context for analysis.</li>
                 </ul>
-                <h3>Technologies</h3>
-                <div class="modal-tags"><span>Python</span><span>FastAPI</span><span>Ollama</span><span>LLaMA3 / Qwen</span><span>Prometheus / PromQL</span><span>Jenkins</span><span>Ansible</span><span>MySQL</span></div>
+
+                <h3>Architecture</h3>
+                <div class="cs-flow">
+                    <span class="cs-node"><i class="fas fa-bell"></i>Alerts</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node"><i class="fas fa-fingerprint"></i>Dedup</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node"><i class="fas fa-sitemap"></i>Correlate</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node accent"><i class="fas fa-brain"></i>LLM Analysis</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node"><i class="fas fa-user-check"></i>Approve</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node"><i class="fas fa-gears"></i>Remediate</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node"><i class="fas fa-circle-check"></i>Validate</span>
+                </div>
+
+                <h3>Workflow</h3>
+                <ul>
+                    <li><strong>Ingestion &amp; dedup:</strong> continuous alert ingestion with fingerprint-based deduplication.</li>
+                    <li><strong>Correlation:</strong> alert-to-incident correlation, assignment and severity-based SLA tracking.</li>
+                    <li><strong>LLM reasoning:</strong> Ollama (LLaMA3/Qwen) with Prometheus data and incident context for root-cause and remediation suggestions.</li>
+                    <li><strong>Approved remediation:</strong> executed through Jenkins jobs and Ansible playbooks after human approval.</li>
+                    <li><strong>Recovery validation:</strong> post-remediation checks via Prometheus with full audit logging.</li>
+                </ul>
+
+                <h3>Challenges &amp; solutions</h3>
+                <ul>
+                    <li><strong>Alert noise:</strong> fingerprint deduplication collapses duplicate signals.</li>
+                    <li><strong>Safe automation:</strong> remediation always requires human approval before execution.</li>
+                    <li><strong>Query load:</strong> PromQL query caching reduces repeated monitoring calls.</li>
+                </ul>
+
+                <h3>Technology stack</h3>
+                <div class="modal-tags"><span>Python</span><span>FastAPI</span><span>Background Workers</span><span>Ollama</span><span>LLaMA3 / Qwen</span><span>Prometheus / PromQL</span><span>Jenkins</span><span>Ansible</span><span>MySQL</span></div>
+
+                <h3>Learnings</h3>
+                <ul>
+                    <li>LLMs are most useful as an analysis copilot with a human-in-the-loop guardrail, not for autonomous action.</li>
+                    <li>Good deduplication and correlation matter more than model choice for reducing noise.</li>
+                </ul>
             </div>
         </div>
 
@@ -238,15 +349,33 @@
                 <p class="modal-tagline">A personal hackathon project exploring safe, AI-assisted payment workflows.</p>
             </div>
             <div class="modal-body">
-                <p class="modal-note"><i class="fas fa-flask"></i> Actively in development. Features are described as intended design and will be confirmed against the implementation as it matures.</p>
-                <h3>Concept</h3>
+                <p class="modal-note"><i class="fas fa-flask"></i> Actively in development. The sections below separate what's intended from what's confirmed; nothing here claims a completed PayPal integration.</p>
+
+                <h3>Overview &amp; problem</h3>
+                <p class="cs-text">Payment interactions are rigid and form-driven. The idea: let users express payment-related intent in natural language, while keeping every action behind an explicit confirmation step.</p>
+
+                <h3>Intended workflow</h3>
+                <div class="cs-flow">
+                    <span class="cs-node"><i class="fas fa-comment"></i>User Intent</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node accent"><i class="fas fa-robot"></i>AI Agent</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node"><i class="fas fa-user-check"></i>Confirm</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node"><i class="fas fa-shield-halved"></i>Controlled Action</span>
+                </div>
+
+                <h3>Design principles</h3>
                 <ul>
-                    <li>An AI agent that helps users with payment-related tasks using natural language.</li>
-                    <li>Emphasis on explicit user confirmation before any action is taken.</li>
-                    <li>Controlled, auditable execution rather than fully autonomous transactions.</li>
+                    <li>Natural-language handling of payment-related tasks.</li>
+                    <li>Explicit user confirmation before any action.</li>
+                    <li>Controlled, auditable execution — never fully autonomous.</li>
                 </ul>
+
                 <h3>Planned stack</h3>
                 <div class="modal-tags"><span>Python</span><span>FastAPI</span><span>LLM Agents</span><span>PayPal API</span></div>
+
+                <p class="cs-status"><i class="fas fa-circle-half-stroke"></i> Status: in development — features will be confirmed against the implementation as it matures.</p>
             </div>
         </div>
 
@@ -259,14 +388,32 @@
                 <p class="modal-tagline">A personal AI-assisted DevOps assistant for incident analysis and remediation guidance.</p>
             </div>
             <div class="modal-body">
+                <h3>Overview &amp; problem</h3>
+                <p class="cs-text">During incidents, engineers lose time searching for the right runbook. OpsMind AI retrieves relevant runbook context with RAG and uses an LLM to suggest next steps.</p>
+
+                <h3>RAG workflow</h3>
+                <div class="cs-flow">
+                    <span class="cs-node"><i class="fas fa-triangle-exclamation"></i>Incident</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node"><i class="fas fa-magnifying-glass"></i>Retrieve (RAG)</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node"><i class="fas fa-book"></i>Runbook Context</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node accent"><i class="fas fa-brain"></i>LLM Reasoning</span>
+                    <span class="cs-arrow">→</span>
+                    <span class="cs-node"><i class="fas fa-lightbulb"></i>Recommendations</span>
+                </div>
+
                 <h3>What it does</h3>
                 <ul>
-                    <li>Incident analysis with contextual runbook retrieval using RAG.</li>
-                    <li>Remediation recommendations driven by LLM reasoning.</li>
-                    <li>DevOps assistant workflow for faster triage.</li>
+                    <li>Contextual runbook retrieval using RAG over a vector store.</li>
+                    <li>LLM-driven remediation recommendations.</li>
+                    <li>Assistant workflow for faster incident triage.</li>
                 </ul>
-                <h3>Technologies</h3>
+
+                <h3>Technology stack</h3>
                 <div class="modal-tags"><span>Python</span><span>RAG</span><span>LLM</span><span>Vector DB</span></div>
+
                 <a href="https://github.com/Venugopal-14/opsmind-ai" target="_blank" rel="noopener" class="btn btn-primary btn-sm modal-cta"><i class="fab fa-github"></i> View Repository</a>
             </div>
         </div>
@@ -302,24 +449,51 @@
                 </div>
                 <div class="skills-groups">
                     <div class="skill-group" data-animate>
-                        <h4><i class="fas fa-server"></i> Backend</h4>
-                        <p class="skill-line">Python · Django · FastAPI · REST APIs · Java</p>
+                        <h4><i class="fas fa-server"></i> Backend Engineering</h4>
+                        <div class="tech-tiles">
+                            <span class="tech-tile"><i class="fab fa-python"></i>Python</span>
+                            <span class="tech-tile"><i class="fas fa-leaf"></i>Django</span>
+                            <span class="tech-tile"><i class="fas fa-bolt"></i>FastAPI</span>
+                            <span class="tech-tile"><i class="fab fa-java"></i>Java</span>
+                        </div>
                     </div>
                     <div class="skill-group" data-animate>
-                        <h4><i class="fas fa-brain"></i> AI / ML</h4>
-                        <p class="skill-line">Ollama · LLaMA3 · RAG · FAISS · RASA · Scikit-learn</p>
+                        <h4><i class="fas fa-brain"></i> AI/ML &amp; LLM Applications</h4>
+                        <div class="tech-tiles">
+                            <span class="tech-tile"><i class="fas fa-robot"></i>Ollama</span>
+                            <span class="tech-tile"><i class="fas fa-comment-dots"></i>LLaMA3</span>
+                            <span class="tech-tile"><i class="fas fa-diagram-project"></i>RAG</span>
+                            <span class="tech-tile"><i class="fas fa-vector-square"></i>FAISS</span>
+                            <span class="tech-tile"><i class="fas fa-chart-pie"></i>Scikit-learn</span>
+                        </div>
                     </div>
                     <div class="skill-group" data-animate>
-                        <h4><i class="fas fa-gears"></i> DevOps &amp; Automation</h4>
-                        <p class="skill-line">Jenkins · Docker · Kubernetes · Ansible · GitLab CI/CD</p>
+                        <h4><i class="fas fa-gears"></i> Platform Engineering &amp; CI/CD</h4>
+                        <div class="tech-tiles">
+                            <span class="tech-tile"><i class="fab fa-docker"></i>Docker</span>
+                            <span class="tech-tile"><i class="fas fa-dharmachakra"></i>Kubernetes</span>
+                            <span class="tech-tile"><i class="fas fa-screwdriver-wrench"></i>Jenkins</span>
+                            <span class="tech-tile"><i class="fas fa-terminal"></i>Ansible</span>
+                            <span class="tech-tile"><i class="fab fa-gitlab"></i>GitLab CI/CD</span>
+                        </div>
                     </div>
                     <div class="skill-group" data-animate>
-                        <h4><i class="fas fa-chart-column"></i> Observability</h4>
-                        <p class="skill-line">Prometheus · Grafana · Dynatrace · Elasticsearch</p>
+                        <h4><i class="fas fa-chart-column"></i> Observability &amp; AIOps</h4>
+                        <div class="tech-tiles">
+                            <span class="tech-tile"><i class="fas fa-fire"></i>Prometheus</span>
+                            <span class="tech-tile"><i class="fas fa-chart-line"></i>Grafana</span>
+                            <span class="tech-tile"><i class="fas fa-gauge-high"></i>Dynatrace</span>
+                            <span class="tech-tile"><i class="fas fa-magnifying-glass"></i>Elasticsearch</span>
+                        </div>
                     </div>
                     <div class="skill-group" data-animate>
-                        <h4><i class="fas fa-database"></i> Data &amp; Distributed Systems</h4>
-                        <p class="skill-line">Kafka · ClickHouse · PostgreSQL · Redis</p>
+                        <h4><i class="fas fa-database"></i> Databases &amp; Distributed Systems</h4>
+                        <div class="tech-tiles">
+                            <span class="tech-tile"><i class="fas fa-stream"></i>Kafka</span>
+                            <span class="tech-tile"><i class="fas fa-table-cells"></i>ClickHouse</span>
+                            <span class="tech-tile"><i class="fas fa-database"></i>PostgreSQL</span>
+                            <span class="tech-tile"><i class="fas fa-bolt-lightning"></i>Redis</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -348,16 +522,40 @@
                         </div>
                         <p class="timeline-summary">
                             Platform engineering, backend development and automation across large
-                            distributed environments — from onboarding automation to production-grade
-                            observability and AIOps.
+                            distributed environments.
                         </p>
-                        <div class="exp-focus">
-                            <span class="exp-focus-item"><strong>Onboarding Automation</strong> AWX→Jenkins migration, OS-patch &amp; onboarding workflows</span>
-                            <span class="exp-focus-item"><strong>LBG Platform</strong> PreProd · 30+ servers</span>
-                            <span class="exp-focus-item"><strong>Business Martini</strong> PreProd &amp; Production · 60+ servers</span>
-                            <span class="exp-focus-item"><strong>Observability &amp; AIOps</strong> Prometheus, Grafana, Dynatrace, GenAI</span>
+                        <div class="exp-blocks">
+                            <div class="exp-block">
+                                <h4>Customer Onboarding Automation</h4>
+                                <ul>
+                                    <li>Migrated automation workloads from AWX to Jenkins, enabling full AWX decommissioning.</li>
+                                    <li>Built OS-patch automation with validation &amp; reporting — <strong>95%+ less manual effort</strong>.</li>
+                                    <li>Django/FastAPI onboarding APIs + RASA chatbots — <strong>80% less onboarding effort</strong>.</li>
+                                </ul>
+                            </div>
+                            <div class="exp-block">
+                                <h4>LBG Platform Engineering <span class="exp-scope">PreProd · 30+ servers</span></h4>
+                                <ul>
+                                    <li>Owned distributed PreProd across 30+ servers (Kafka, ClickHouse, Kubernetes, HAProxy, Grafana).</li>
+                                    <li>Automated Kubernetes deploys via Jenkins, Ansible and GitLab.</li>
+                                </ul>
+                            </div>
+                            <div class="exp-block">
+                                <h4>Business Martini Platform Engineering <span class="exp-scope">PreProd &amp; Production · 60+ servers</span></h4>
+                                <ul>
+                                    <li>Owned full lifecycle of production-grade infrastructure across 60+ servers.</li>
+                                    <li>One-click deployment automation cut manual deployment effort by <strong>~70%</strong>.</li>
+                                </ul>
+                            </div>
+                            <div class="exp-block">
+                                <h4>Observability &amp; AIOps</h4>
+                                <ul>
+                                    <li>Centralized monitoring with Prometheus, Grafana, Dynatrace, Elasticsearch and Logstash.</li>
+                                    <li>Resolved production incidents across distributed systems; building GenAI-assisted incident analysis.</li>
+                                </ul>
+                            </div>
                         </div>
-                        <p class="timeline-note">Deep technical detail is available in the <a href="#projects">AutoOps AI and DeployHub case studies</a>.</p>
+                        <p class="timeline-note">Full technical depth is in the <a href="#projects">AutoOps AI and DeployHub case studies</a>.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-animate>
@@ -449,6 +647,7 @@
                     <div class="form-group"><input type="text" name="subject" placeholder="Subject" required></div>
                     <div class="form-group"><textarea name="message" rows="4" placeholder="Your Message" required></textarea></div>
                     <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    <p class="form-note">This opens your email client with the message pre-filled — no data is stored.</p>
                 </form>
             </div>
         </div>
@@ -466,6 +665,6 @@
         </div>
     </footer>
 
-    <script src="script.js?v=4"></script>
+    <script src="script.js?v=5"></script>
 </body>
 </html>

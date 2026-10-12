@@ -81,12 +81,20 @@
             if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
                 notify('Please enter a valid email address.', 'error'); return;
             }
+            // Open the user's email client with the message pre-filled (no backend needed).
+            const name = (data.get('name') || '').toString();
+            const subject = (data.get('subject') || '').toString();
+            const message = (data.get('message') || '').toString();
+            const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${encodeURIComponent(message)}`;
+            const mailto = `mailto:venugopal.dev7@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+
             const btn = form.querySelector('button[type="submit"]');
             const original = btn.innerHTML;
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Opening email...';
             btn.disabled = true;
             setTimeout(() => {
-                notify("Message sent! I'll get back to you soon.", 'success');
+                window.location.href = mailto;
+                notify('Opening your email client…', 'success');
                 form.reset();
                 btn.innerHTML = original;
                 btn.disabled = false;
